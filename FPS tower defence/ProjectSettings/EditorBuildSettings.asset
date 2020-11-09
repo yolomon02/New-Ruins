@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/mainMenu.unity
+    guid: 5f8a29ee92061a0458eafcaa102d58ef
+  - enabled: 1
+    path: Assets/Scenes/colosseum.unity
+    guid: 390f33a725f8ae745b73787d41476eba
   m_configObjects: {}

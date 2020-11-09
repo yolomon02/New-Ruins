@@ -110,8 +110,8 @@ MonoBehaviour:
     type: 3}
   m_FireTransform: {fileID: 5777009431674096127}
   m_LaunchForceAR: 200
-  m_autoSpeed: 0.1
-  ARstrayFactor: 0.75
+  m_autoSpeed: 0.15
+  ARstrayFactor: 3
   ARstrayFactorAIM: 0.15
   BulletsLeft: {fileID: 0}
   reloadTimer: 0
@@ -387,7 +387,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c4b2fd78a6e270746867e623e5a46dad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -496,7 +496,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2336182843921125130, guid: 4449653b1868b6c4592a3a15d1f93e06, type: 3}
+  - {fileID: 2100000, guid: 0018451b83bb3b347bf857c6fc4569f2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -591,7 +591,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9029409849557885128}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -5.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -631,8 +631,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IsWalking: 0
-  m_WalkSpeed: 5
-  m_RunSpeed: 10
+  m_WalkSpeed: 10
+  m_RunSpeed: 15
+  m_AimSpeed: 2.5
   m_RunstepLenghten: 0.7
   m_JumpSpeed: 10
   m_StickToGroundForce: 10
@@ -757,7 +758,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!82 &9029409849556023592
 AudioSource:
   m_ObjectHideFlags: 0
@@ -886,8 +887,10 @@ MonoBehaviour:
   leftZombies: {fileID: 0}
   timer: 1
   zombiesLeft: 0
-  canWin: 0
   healthBarMax: 10
   healthBarMin: 0
   healthBar: {fileID: 0}
   deathScreen: {fileID: 0}
+  VictoryScreen: {fileID: 0}
+  Victory: 0
+  TimerToAvoidTheGameBreaking: 5
